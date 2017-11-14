@@ -17,25 +17,30 @@
 package io.lavagna.model
 
 enum class ColumnDefinition {
-    OPEN {
+    TAX {
         override // red
         val defaultColor: Int
             get() = 0xd9534f
     },
-    CLOSED {
+    LEGAL {
         override // green
         val defaultColor: Int
             get() = 0x5cb85c
     },
-    BACKLOG {
+    FINANCE {
         override // blue
         val defaultColor: Int
             get() = 0x428bca
     },
-    DEFERRED {
+    CLIENT {
         override // yellow
         val defaultColor: Int
             get() = 0xf0ad4e
+    },
+    DONE {
+        override // yellow
+        val defaultColor: Int
+        get() = 0x997300
     };
 
     abstract val defaultColor: Int
